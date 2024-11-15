@@ -19,9 +19,18 @@ time.sleep(3)
 #time.sleep(3)
 #driver.switch_to.alert.accept()
 
-driver.find_element(By.ID, "confirmButton").click()
-time.sleep(3)
+#driver.find_element(By.ID, "confirmButton").click()
+#time.sleep(3)
 #confirm alert ok
 #driver.switch_to.alert.accept()
 #confirm alert close
-driver.switch_to.alert.dismiss()
+#driver.switch_to.alert.dismiss()
+
+#alert menggunakan promt
+driver.find_element(By.ID, "promtButton").click()
+time.sleep(3)
+driver.switch_to.alert.send_keys("saya sedang belajar selenium python")
+time.sleep(3)
+driver.switch_to.alert.accept()
+
+
