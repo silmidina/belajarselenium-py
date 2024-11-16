@@ -22,3 +22,4 @@ driver.implicitly_wait(10)
 
 #cara2
 ActionChains(driver).move_to_element((driver.find_element(By.LINK_TEXT, 'Main Item 2'))).perform()
+ActionChains(driver).move_to_element((driver.find_element(By.LINK_TEXT, "SUB SUB LIST »"))).perform()
